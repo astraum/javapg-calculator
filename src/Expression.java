@@ -4,7 +4,6 @@ import java.util.List;
 // 양의 정수와 사칙연산만을 포함하는 계산식을 오브젝트로 표현하는 클래스
 public class Expression {
     private final List<String> tokens; // 계산식을 숫자와 연산자의 리스트로 저장한다. 한번 만들어지면 값이 바뀌지 않는다.
-    private String operator;
     private int accumulator; // 첫 숫자부터 시작해서 순차적으로 결과값을 담아나간다.
 
     public Expression(String userInput) {
